@@ -1,4 +1,6 @@
 class Player
+  attr_reader :lives, :score
+
   def initialize
     @score = 0
     @lives = 3
@@ -14,11 +16,5 @@ class Player
 
   def is_dead?
     @lives = 0
-  end
-
-  protected
-  
-  def score
-    @score
   end
 end

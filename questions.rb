@@ -4,7 +4,7 @@ class Question
     @num2 = rand(1..20)
     @answer = @num1 + @num2
 
-    "What is #{@num1} plus #{@num2}?"
+    "what is #{@num1} plus #{@num2}?"
   end
 
   def validate_answer(answer)
