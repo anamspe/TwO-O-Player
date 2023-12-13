@@ -1,7 +1,8 @@
 class Player
-  attr_reader :lives, :score
+  attr_reader :name, :lives, :score
 
-  def initialize
+  def initialize(name)
+    @name = name
     @score = 0
     @lives = 3
   end
@@ -12,9 +13,5 @@ class Player
 
   def lose_life
     @lives -= 1
-  end
-
-  def is_dead?
-    @lives = 0
   end
 end
